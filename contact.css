@@ -1,0 +1,60 @@
+/** Zakiyah Al-Thunayyan */
+
+.contact-container {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.contact-table {
+    width: 100%;
+    border-spacing: 20px;
+}
+
+.contact-box {
+    background: var(--white);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+.contact-title {
+    color: var(--rouge);
+    margin-bottom: 20px;
+}
+
+.contact-text {
+    margin-bottom: 12px;
+    word-wrap: break-word;
+}
+
+.map-frame {
+    width: 100%;
+    height: 250px;
+    border: 0;
+    border-radius: 10px;
+}
+
+/* Mobile + Tablet */
+@media only screen and (max-width: 768px) {
+
+    .contact-container {
+        padding: 10px;
+    }
+
+    .contact-table,
+    .contact-table tr,
+    .contact-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .contact-box {
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .map-frame {
+        height: 220px;
+    }
+}

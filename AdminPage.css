@@ -1,0 +1,262 @@
+/* Hana Mokhles 2240009110  */ 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FB9B8F;
+    color: #333;
+}
+
+.header {
+    background-color: #FFF7CD;
+    padding: 20px 40px;
+    overflow: hidden;
+}
+
+.header-left {
+    float: left;
+}
+
+.header-left h1 {
+    margin: 0;
+    color: #5a3d2b;
+    font-size: 28px;
+}
+
+.header-left p {
+    margin-top: 8px;
+    color: #6b4c3b;
+    font-size: 16px;
+}
+
+.header-center {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.header-right {
+    float: right;
+    margin-top: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.add-btn {
+    background-color: #a0d989;
+    color: #333;
+}
+
+.add-btn:hover {
+    background-color: #8fcf78;
+}
+
+.logout-btn {
+    background-color: #e67e6b;
+    color: white;
+}
+
+.logout-btn:hover {
+    background-color: #d96f5c;
+}
+
+.cancel-btn {
+    background-color: #999;
+    color: white;
+    margin-left: 10px;
+}
+
+.cancel-btn:hover {
+    background-color: #7f7f7f;
+}
+
+.table-container,
+.form-container {
+    width: 90%;
+    margin: 30px auto;
+    background-color: #fffaf0;
+    padding: 25px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.table-container h2,
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5a3d2b;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table th {
+    background-color: #a0d989;
+    color: #333;
+}
+
+table tr:nth-child(even) {
+    background-color: #fdf6ee;
+}
+
+table tr:hover {
+    background-color: #f9ebd9;
+}
+
+.table-btn {
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+table th:nth-child(3),
+table td:nth-child(3) {
+    width: 120px;
+}
+
+table th:nth-child(7),
+table td:nth-child(7) {
+    width: 150px;
+}
+
+.delete-btn {
+    background-color: #fb9b8f;
+}
+
+.delete-btn:hover {
+    background-color: #f58779;
+}
+
+.modify-btn {
+    background-color: #f57799;
+}
+
+.modify-btn:hover {
+    background-color: #e85f86;
+}
+
+table img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+}
+
+.form-container form label {
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #5a3d2b;
+    display: block;
+}
+
+.form-container form input,
+.form-container form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.form-container form textarea {
+    height: 100px;
+}
+
+.form-container form button {
+    margin-top: 20px;
+}
+
+.search-form {
+    display: inline;
+}
+
+.search-form input {
+    width: 250px;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.search-form button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f57799;
+    color: white;
+}
+
+.search-form button:hover {
+    background-color: #e85f86;
+}
+
+/* Mobile + Tablet */
+@media only screen and (max-width: 768px) {
+
+    .header {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .header-left,
+    .header-right {
+        float: none;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .header-center {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .search-form {
+        display: block;
+        width: 100%;
+    }
+
+    .search-form input {
+        width: 80%;
+        margin-bottom: 8px;
+    }
+
+    .btn {
+        margin: 5px;
+    }
+
+    .table-container,
+    .form-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 900px;
+    }
+}

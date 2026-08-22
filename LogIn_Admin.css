@@ -1,0 +1,137 @@
+/*  Zakiyah Al-thunayyan 2240005958*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 900px;
+    max-width: 95%;
+    min-height: 500px;
+    display: flex;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+
+.left-panel {
+    width: 45%;
+    background: #FB9B8F;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.logo {
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.left-panel h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.welcome {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.right-panel {
+    width: 55%;
+    background: #FFF7CD;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-panel h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.input-box {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #B5D7A8;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.login-btn:hover {
+    opacity: 0.9;
+}
+
+.create-account {
+    text-align: center;
+}
+
+.create-account a {
+    color: #B5D7A8;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.create-account a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile + Tablet */
+@media only screen and (max-width: 768px) {
+
+    body {
+        align-items: flex-start;
+        padding: 20px 0;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .left-panel,
+    .right-panel {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .left-panel h1,
+    .right-panel h2 {
+        font-size: 30px;
+    }
+
+    .logo {
+        max-width: 90px;
+    }
+}

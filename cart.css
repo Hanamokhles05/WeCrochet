@@ -1,0 +1,90 @@
+ /** Zainab Ali Alfaraj 2240006683 **/ 
+
+.cart-top {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.back-link {
+    font-size: 20px;
+    color: var(--rouge);
+    text-decoration: none;
+}
+
+.cart-container {
+    width: 90%;
+    margin: 20px auto;
+    overflow-x: auto;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.inline-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.quantity-input {
+    width: 70px;
+    padding: 6px;
+    text-align: center;
+}
+
+.small-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+}
+
+.cart-actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.empty-cart {
+    text-align: center;
+    padding: 50px;
+}
+
+.empty-cart p {
+    font-size: 20px;
+    color: #999;
+}
+
+/* Mobile + Tablet */
+@media only screen and (max-width: 768px) {
+
+    .cart-container {
+        width: 95%;
+        overflow-x: auto;
+    }
+
+    .cart-table {
+        min-width: 700px;
+    }
+
+    .inline-form {
+        display: block;
+    }
+
+    .quantity-input {
+        width: 60px;
+        margin-bottom: 5px;
+    }
+
+    .cart-actions a,
+    .cart-actions button {
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .empty-cart {
+        padding: 30px 10px;
+    }
+}

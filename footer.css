@@ -1,0 +1,56 @@
+ /** Zainab Ali Alfaraj 2240006683 **/ 
+ 
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    gap: 20px;
+}
+
+.footer-container div {
+    min-width: 200px;
+}
+
+.footer-title {
+    color: var(--peach);
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 6px 0;
+    word-wrap: break-word;
+}
+
+.footer hr {
+    border-color: rgba(255,255,255,0.2);
+    margin: 15px 0;
+}
+
+/* Mobile + Tablet */
+@media only screen and (max-width: 768px) {
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-container div {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 25px 15px;
+    }
+}
